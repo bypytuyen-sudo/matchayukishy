@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>YuKiShy Matcha</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f6f8f6;
+    color: #1c1c1c;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1558160074-4d7d8bdf4256") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    font-size: 120px;
+    color: rgba(255,255,255,0.15);
+    bottom: 50px;
+}
+
+.hero-content {
+    color: white;
+    z-index: 2;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #6BAF92;
+    color: white;
+    cursor: pointer;
+}
+
+/* SECTION */
+section {
+    padding: 80px 40px;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    width: 220px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    color: gray;
+}
+
+/* SPLIT */
+.split {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.split img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* FEEDBACK */
+.feedback {
+    display: flex;
+    gap: 20px;
+}
+
+.review {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #1f3d2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h2>YuKiShy</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <h1>YukiShy</h1>
+    <div class="hero-content">
+        <h2>Matcha Made VietNam</h2>
+        <a href="#products"><button>Shop All Products</button></a>
+    </div>
+</section>
+
+<!-- YOU MAY ALSO LIKE -->
+<section>
+<h2>You May Also Like</h2>
+
+<div class="products">
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371">
+        <h3>Matcha Latte</h3>
+        <p>M / L</p>
+        <p>59k</p>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+        <h3>Matcha Lemon</h3>
+        <p>M / L</p>
+        <p>79k</p>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+        <h3>Matcha Yukishy</h3>
+        <p>M / L</p>
+        <p>79k</p>
+    </div>
+</div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="split">
+    <div>
+        <h2>For the ultimate matcha experience</h2>
+        <p>Your daily dose of vibrant energy and wellness</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1524593119774-16a6b5b7d5b9">
+</section>
+
+<!-- FEEDBACK -->
+<section>
+<h2>Customer Feedback</h2>
+
+<div class="feedback">
+    <div class="review">“Rất ngon và nhẹ, uống không bị gắt”</div>
+    <div class="review">“Matcha chuẩn vị, bao bì đẹp”</div>
+    <div class="review">“Sẽ mua lại!”</div>
+</div>
+</section>
+
+<!-- ALL PRODUCTS -->
+<section id="products">
+<h2>All Products</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256">
+<h3>Matcha Latte</h3>
+<p>59k</p>
+<p>Premium matcha blended with smooth milk</p>
+<button>Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+<h3>Matcha Lemon</h3>
+<p>79k</p>
+<p>Refreshing citrus matcha</p>
+<button>Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+<h3>Matcha Yukishy</h3>
+<p>79k</p>
+<p>Authentic Japanese matcha</p>
+<button>Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1498804103079-a6351b050096">
+<h3>Coconut Matcha</h3>
+<p>89k</p>
+<p>Matcha + coconut water</p>
+<button>Buy Now</button>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Yukishy</h2>
+<p>
+Yukishy was created from a pursuit of balance — where quality matcha meets a mindful lifestyle.
+</p>
+<p>
+Healthy – Clean ingredients  
+Chill – Calm minimal space  
+Premium – Carefully sourced matcha  
+</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Facebook: YuKiShy SG</p>
+<p>Instagram: Yukishy.vn</p>
+<p>Phone: 0909376478</p>
+<p>Address: 32 Ngô Đức Kế, Sài Gòn</p>
+</section>
+
+<footer>
+© 2026 YuKiShy
+</footer>
+
+</body>
+</html>
